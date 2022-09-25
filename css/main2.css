@@ -1,0 +1,576 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap);
+
+
+* {
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box;
+
+}
+body {
+    height: 900px;
+
+}
+
+header {
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+	border-radius: 0 0 85% 85% / 30%;
+    text-align: center;
+}
+
+header .overlay{
+	width: 100%;
+	height: 100%;
+	color: #FFF;
+	text-shadow: 1px 1px 1px #333;
+    background-image: linear-gradient( 135deg, #ee99eec2 30%, #6bb0e9c0 100%);	
+}
+
+h1 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 80px;
+	margin-bottom: 30px;
+}
+
+h3, p {
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 30px;
+}
+
+div.overlay .text {
+    padding: 10px 10px 20px 10px;
+    font: 1rem sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 20px;
+}
+
+div.name {
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    font-weight: 800;
+    margin-top: 10%;
+}
+
+div.name span.letter1, span.letter2, span.letter3, span.letter4, span.letter5 {
+    font-size: 15vw;
+    text-shadow: -0.08em 0.03em 0.12em rgba(0,0,0,0.7);
+}
+
+div.name span:not(:first-child){
+    margin-left: -0.18em;
+}
+
+div.name span.letter1:hover + span.long-text1 {
+    display: block;
+}
+
+span.long-text1 {
+    display: none;
+    font-size: 20px;
+    color:#333;
+    position: absolute;
+    top: 80%;
+    left: 30%;
+}
+
+span.letter2:hover + span.long-text2 {
+    display: block;
+}
+
+span.letter2:hover, span.letter1:hover, span.letter3:hover, span.letter4:hover, span.letter5:hover  {
+    color:#333;
+}
+
+span.long-text2 {
+    display: none;
+    font-size: 20px;
+    color:#333;
+    position: absolute;
+    top: 80%;
+    left: 40%;
+}
+
+div.name span.letter3:hover + span.long-text3 {
+    display: block;
+}
+
+span.long-text3 {
+    display: none;
+    font-size: 20px;
+    color:#333;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+}
+
+span.long-text4 {
+    display: none;
+    font-size: 20px;
+    color:#333;
+    position: absolute;
+    top: 80%;
+    left: 55%;
+}
+
+ span.letter4:hover + span.long-text4 {
+    display: block;
+}
+
+span.long-text5 {
+    display: none;
+    font-size: 20px;
+    color:#333;
+    position: absolute;
+    top: 80%;
+    left: 65%;
+}
+
+ span.letter5:hover + span.long-text5 {
+    display: block;
+}
+
+@media screen and (max-width: 390px) {
+    div.overlay .text {
+        letter-spacing: 10px;
+    }
+
+    div.name span.letter1,div.name span.letter2,div.name span.letter3,div.name span.letter4,div.name span.letter5 {
+        font-size: 25vw;
+    }
+
+    div.name span.long-text1,div.name span.long-text2,div.name span.long-text3,div.name span.long-text4,div.name span.long-text5 {
+        font-size: 13px;
+        left: 20%;
+    }
+}
+
+/* Slideshow container */
+.slideshow-container, .slideshow-container2 {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    height:auto;
+}
+
+.mySlides, .mySlides2 {
+    display: block;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    box-shadow: 0px 5px 25px 0px rgb(0 0 0 / 20%);
+    max-height: 600px;
+}
+
+.mySlides img, .mySlides2 img {
+    width: 500px;
+}
+
+.cover {
+    width: 70%;
+    margin-left: 27%;
+    text-align: right;
+    height: 100%;
+    position: relative;
+    word-wrap: break-word;
+}
+
+.cover h1 {
+    font-family: fantasy;
+    font-size: 5rem;
+    width:auto;
+}
+
+.cover h2 {
+    font-family: monospace;
+    font-size: 25px;
+    width: 70%;
+    text-align: right;
+}
+
+/* Next & previous buttons */
+.prev, .prev2 {
+    left: 0;
+}
+
+.prev, .next, .prev2, .next2 {
+    background: rgba(0, 0, 0, 0.37);
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next, .next2 {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover, .prev2:hover, .next2:hover {
+    background-color: rgba(10, 9, 9, 0.8);
+}
+
+/* Caption text */
+ .text2 { /* .text */
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext, .numbertext2 {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+
+
+@-webkit-keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}
+
+
+/* Title MY PROJECTS*/
+.title-word {
+    animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+--color-1: #DF8453;
+--color-2: #3D8DAE;
+--color-3: #E4A9A8;
+}
+
+.title-word-2 {
+--color-1: #DBAD4A;
+--color-2: #ACCFCB;
+--color-3: #17494D;
+}
+
+.title-word-3 {
+--color-1: #ACCFCB;
+--color-2: #E4A9A8;
+--color-3: #ACCFCB;
+}
+
+.title-word-4 {
+    --color-1: #3D8DAE;
+    --color-2: #DF8453;
+    --color-3: #E4A9A8;
+}
+
+@keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+}
+
+/* Here are visual styles.  */
+  
+  .skills-donuts {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    flex-wrap: wrap;
+    padding: 30px;
+  }
+  .semi-donut.margin {
+    --percentage: 90;
+    --fill: #dd0cb0;
+  }
+  .semi-donut-model-2.margin {
+    --percentage: 90;
+    --fill: #039BE5;
+  }
+  .semi-donut {
+    --percentage: 0;
+    --fill: #ff0;
+    width: 300px;
+    height: 150px;
+    position: relative;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    overflow: hidden;
+    color: var(--fill);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  .semi-donut:after {
+    content: '';
+    width: 300px;
+    height: 300px;
+    border: 50px solid;
+    border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) var(--fill) var(--fill);
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    transform: rotate(calc(1deg * ( -45 + var(--percentage) * 1.8 )));
+    animation: fillAnimation 1s ease-in;
+  }
+  .semi-donut-model-2 {
+    width: 300px;
+    height: 150px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 150px 150px 0 0;
+    overflow: hidden;
+    color: var(--fill);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  .semi-donut-model-2:before, .semi-donut-model-2:after {
+    content: '';
+    width: 300px;
+    height: 150px;
+    border: 50px solid var(--fill);
+    border-top: none;
+    position: absolute;
+    transform-origin: 50% 0% 0;
+    border-radius: 0 0 300px 300px;
+    box-sizing: border-box;
+    left: 0;
+    top: 100%;
+  }
+  .semi-donut-model-2:before {
+    border-color: rgba(0, 0, 0, 0.15);
+    transform: rotate(180deg);
+  }
+  .semi-donut-model-2:after {
+    z-index: 3;
+    animation: 1s fillGraphAnimation ease-in;
+    transform: rotate(calc(1deg * ( var(--percentage) * 1.8 )));
+  }
+  .semi-donut-model-2:hover:after {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  .multi-graph {
+    width: 300px;
+    height: 150px;
+    position: relative;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .multi-graph:before {
+    content: '';
+    width: 300px;
+    height: 150px;
+    border: 50px solid rgba(0, 0, 0, 0.15);
+    border-bottom: none;
+    position: absolute;
+    box-sizing: border-box;
+    transform-origin: 50% 0%;
+    border-radius: 300px 300px 0 0;
+    left: 0;
+    top: 0;
+  }
+  .multi-graph .graph {
+    width: 300px;
+    height: 150px;
+    border: 50px solid var(--fill);
+    border-top: none;
+    position: absolute;
+    transform-origin: 50% 0% 0;
+    border-radius: 0 0 300px 300px;
+    left: 0;
+    top: 100%;
+    z-index: 5;
+    animation: 1s fillGraphAnimation ease-in;
+    transform: rotate(calc(1deg * ( var(--percentage) * 1.8 )));
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  .multi-graph .graph:after {
+    content: attr(data-name) ' ' counter(varible) '%';
+    counter-reset: varible var(--percentage);
+    background: black;
+    box-sizing: border-box;
+    border-radius: 2px;
+    color: #fff;
+    font-weight: 200;
+    font-size: 12px;
+    height: 20px;
+    padding: 3px 5px;
+    top: 0px;
+    position: absolute;
+    left: 0;
+    transform: rotate(calc(-1deg * var(--percentage) * 1.8)) translate(-30px, 0px);
+    transition: 0.2s ease-in;
+    transform-origin: 0 50% 0;
+    opacity: 0;
+  }
+  .multi-graph .graph:hover {
+    opacity: 0.8;
+  }
+  .multi-graph .graph:hover:after {
+    opacity: 1;
+    left: 30px;
+  }
+  @media screen and (max-width: 390px) {
+    .multi-graph, .multi-graph .graph, .multi-graph:before {
+      width: 200px;
+      height: 100px;
+    }
+    .skills-donuts {
+      padding: 0;
+    }
+    .container2 .title {
+      font-size: 3rem;
+    }
+  }
+  @media screen and (max-width: 265px) {
+    .multi-graph, .multi-graph .graph, .multi-graph:before {
+      width: 170px;
+      height: 85px;
+      font-size: 14px;
+    }
+  }
+  @keyframes fillAnimation {
+    0% {
+      transform: rotate(-45deg);
+    }
+    50% {
+      transform: rotate(135deg);
+    }
+  }
+  @keyframes fillGraphAnimation {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+  }
+  /* Title MY SKILLS*/
+  .title-word {
+    animation: color-animation 4s linear infinite;
+  }
+  .title-word-1 {
+    --color-1: #DF8453;
+    --color-2: #3D8DAE;
+    --color-3: #E4A9A8;
+  }
+  .title-word-2 {
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
+  }
+  .title-word-3 {
+    --color-1: #ACCFCB;
+    --color-2: #E4A9A8;
+    --color-3: #ACCFCB;
+  }
+  @keyframes color-animation {
+    0% {
+      color: var(--color-1);
+    }
+    32% {
+      color: var(--color-1);
+    }
+    33% {
+      color: var(--color-2);
+    }
+    65% {
+      color: var(--color-2);
+    }
+    66% {
+      color: var(--color-3);
+    }
+    99% {
+      color: var(--color-3);
+    }
+    100% {
+      color: var(--color-1);
+    }
+  }
+  .container2 {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    height: auto;
+    margin: auto;
+    padding-top: 30px;
+  }
+  .title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 6.5vw;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  
+  
