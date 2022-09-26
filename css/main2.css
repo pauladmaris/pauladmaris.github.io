@@ -31,6 +31,18 @@ header .overlay{
     background-image: linear-gradient( 135deg, #ee99eec2 30%, #6bb0e9c0 100%);	
 }
 
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active-reveal {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 h1 {
 	font-family: 'Dancing Script', cursive;
 	font-size: 80px;
